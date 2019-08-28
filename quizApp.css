@@ -1,0 +1,293 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    width:100%;
+}
+
+body{
+    background: url(https://bit.ly/2FwISzd) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color:white;
+}
+
+main {
+    display:flex;
+    height:100%;
+    justify-content: center;
+}
+
+/* main {
+    margin-top: 30%;
+} */
+
+html, body{
+    height:100%;
+    margin:0;
+}
+
+.quizTitle {
+    color:white;
+}
+
+h1 {
+    display:inline-block;
+    width:100%;
+}
+
+ul {
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+p {
+    font-size: 6vw;
+}
+
+li{
+    color:white;
+    font-size: 5vw;
+    display: inline-block;
+}
+
+.initialStart {
+    position: relative;
+    top:30%;
+    text-align: center;
+}
+
+.learnButton {
+    margin-top: 35px;
+}
+
+.questionForm{
+     background: rgba(63, 99, 153, 0.5);
+     width: 87.6%;
+     height: 70%;
+     margin-left:auto;
+     margin-right:auto;
+     display: none;
+     justify-content: space-evenly;
+     flex-direction: column;
+}
+
+legend {
+    display: none;
+}
+
+.flagBox {
+    background: no-repeat center center fixed;
+    position: relative;
+    min-width: 100px;
+    min-height: 65px;
+    max-width: 150px;
+    max-height: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+}
+
+
+fieldset {
+    border: 0px;
+}
+
+label {
+    display:block;
+} 
+
+label.questionAsked {
+    font-size: 5.8vw;
+    display:block;
+}
+
+.questionBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.questionForm > image {
+    width: 100%;
+    height: auto;
+}
+
+.option {
+    width:20px;
+    height:40px;
+    display:inline-block; 
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px; 
+    margin-bottom: 0px;
+}
+
+fieldset > label {
+    width:auto;
+    min-width: 0px;
+}
+
+fieldset > input {
+    display: inline-block;
+    margin-top:0px;
+    vertical-align:middle;
+}
+
+#choice1, #choice2, #choice3, #choice4 {
+    display: inline-block;
+    margin-top: 0px;
+    font-size:6.5vw;
+    margin-left:10px;
+}
+
+.submitAnswer {
+    text-align: center;
+    font-size: 1.4em;
+    width : 170px;
+    height:auto;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.response {
+    text-align: center;  
+    background: rgba(63, 99, 153, 0.5);
+    position: relative;
+}
+
+button {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+.starterPage {
+    display:flex;
+}
+
+label > .questionAsked {
+    height:40px;
+    text-align: center;
+}
+
+.questionFormAnswer {
+    position: relative;
+    top: 30%;
+}
+
+@media only screen and (min-width: 768px){
+
+    li {
+        font-size: 4vw;
+    }
+
+    label {
+        font-size:5vw;
+    }
+
+    #choice1, #choice2, #choice3, #choice4 {
+        font-size: 3.6vw;
+    } 
+
+    .nextButton {
+        font-size: 3vw;
+    }
+    
+    .quizTitle{
+        width:100%;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    
+    .quizTitle {
+        margin-left:auto;
+        margin-right:auto;
+        width:30%;
+        display:block;
+    }
+    
+    h1 {
+        width:40%;
+    }
+
+    ul {
+        display:block;
+        width:30%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    li {
+        font-size: 2.4vw;
+    }
+
+    header {
+        margin-top: 0%;
+        height:11.5%;
+    }
+
+    .quizTitle {
+        font-size:2.7vw;
+    }
+
+    .quizTitle {
+        margin-top: 0%;
+    }
+
+    h2 {
+        font-size: 2.7vw;
+    }
+
+    button {
+        font-size: 2vw;
+    }
+
+    .questionForm{
+        top: 26.3%;
+   }
+
+    label {
+     font-size:2.7vw;
+    }
+
+    #choice1, #choice2, #choice3, #choice4 {
+        font-size:2.7vw;
+    } 
+
+    p {
+        font-size: 2.7vw;
+    }
+
+    label.questionAsked {
+        font-size: 2.7vw;
+        height:7;
+        margin-bottom:8%;
+        text-align: center;
+    }
+
+    .nextButton {
+        font-size: 2.3vw;
+    }
+
+
+}
+

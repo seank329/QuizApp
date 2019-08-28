@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do you know your Country Capitals Quiz App</title>
+    <link href="quizApp.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1 class ='quizTitle'>World Capitals Quiz</h1>
+        <ul>
+            <li>Question:<span arialive = "polite" class = 'questionNumber'>0</span>/5 </li>
+            <li>Score:<span arialive= "polite" class = 'scoreCount'>0</span></li>
+        </ul>
+    </header>
+    <main>
+            <div class = starterPage>
+                <section class="initialStart">
+                    <h2>Let's see how well you know other countries' capitals.. </h2>
+                    <button class="startTest">Begin!</button>
+                    <h2> ..or maybe you'd like to </h3>
+                    <form action="https://en.wikipedia.org/wiki/List_of_national_capitals" >
+                    <button class = "learnButton" type = "submit">Learn!</button>
+                    </form>       
+                </section> 
+            </div>
+        <section class="questionFormSection">
+            <div class = 'questionFormAnswer'></div>
+            <form class = "questionForm" name = "qform" id = "qform1">
+                <!---<legend> Questions </legend>-->
+                <div class = "questionBox">
+                    <div class = "flagBox"></div>
+                    <label class ="questionAsked"  for="Question Asked"><span class = "insert"></span></label>
+                    <fieldset name="Multiple Choice">
+                        <label> <input type = 'radio' class ='currentOption' name ='currentOption' value = 'COUNTRYDATA[questionNumber].answers[0]' class = 'option'> <span for='choice1' id='choice1' >choice1</span></label></br>
+                        <label> <input type = 'radio' class ='currentOption' name ='currentOption' value = 'COUNTRYDATA[questionNumber].answers[1]' class = 'option'> <span for='choice2' id='choice2' >choice2</span></label></br>
+                        <label> <input type = 'radio' class ='currentOption' name ='currentOption' value = 'COUNTRYDATA[questionNumber].answers[2]' class = 'option'> <span for='choice3' id='choice3' >choice3</span></label></br>
+                        <label> <input type = 'radio' class ='currentOption' name ='currentOption' value = 'COUNTRYDATA[questionNumber].answers[3]' class = 'option'> <span for='choice4' id='choice4' >choice4</span></label></br>
+                    </fieldset>
+                    <button class="submitAnswer">Submit Answer</button>
+                </div>
+            </form>
+            </section>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="quizAppData.js"></script>
+    <script src="quizApp.js"></script>
+</body>
+</html>
