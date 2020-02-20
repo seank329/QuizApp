@@ -194,10 +194,10 @@ h1, li, h2, h3 {
     color: white;
     font-size: 20px;
     text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
+        0.04em 0 black,
+        0 0.04em black,
+        -0.04em 0 black,
+        0 -0.04em black;
 }
 
 @media only screen and (min-width: 768px){
